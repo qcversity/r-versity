@@ -1,0 +1,53 @@
+site_name: R-Programming Versity
+site_description: Quant Coding Versity for R
+site_author: Dr Saad Laouadi
+site_url: https://qcversity.github.io/r-versity
+
+nav:
+  - Introduction: index.md
+  - Environment Setup:
+      - Envsetup:
+        - Windows setup.md
+        - Unix-Like Systems setup.md
+  - contact: contact.md
+
+theme:
+  name: null
+  custom_dir: theme/
+  # extra_css:
+  #   - css/main.css
+  # logo: img/logo.bmp
+  # features:
+  #   - navigation.footer
+  #   - navigation.instant
+  #   - navigation.top
+  #   - content.code.annotate
+  #   - search.suggest
+  #   - search.highlight
+
+plugins:
+  - search
+  - exclude-search:
+      exclude: [newsletter/*]
+  - autolinks
+  # - git-revision-date-localized:
+  #     type: timeago
+  - minify:
+      minify_html: true
+  - section-index
+  # - mkdocs-newsletter
+
+extra:
+  article_nav_top: false
+  article_nav_bottom: false
+  history_buttons: false
+  version: 1.0.0
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/qcversity
+    - icon: fontawesome/solid/rss
+      link: https://qcversity.github.io/r-versity/newsletter/0_newsletter_index
+
+
+repo_name: qcversity/r-versity
+repo_url: https://github.com/qcversity/r-versity
